@@ -38,7 +38,7 @@ ul {
   margin-right: auto;
 }
 
-/*stail header*/
+/* шапка */
 
 .header {
   background: #ffffff;
@@ -96,7 +96,7 @@ ul {
   margin-left: auto;
 }
 
-/* nav navigation */
+/* навигация шапки */
 
 .navigation-list {
   display: flex;
@@ -145,7 +145,7 @@ ul {
   color: #2196f3;
 }
 
-/*style hero*/
+/* герой */
 
 .hero {
   padding-top: 200px;
@@ -168,7 +168,7 @@ ul {
   margin-right: auto;
 }
 
-/*studio button*/
+/* кнопка стидия */
 
 .hero-btn {
   display: inline-block;
@@ -190,7 +190,7 @@ ul {
   color: #f34e38;
 }
 
-/*butt portfolio*/
+/* кнопка галиреи */
 
 .gallery-btn-aktiv {
   padding: 6px 22px 6px 22px;
@@ -238,7 +238,7 @@ ul {
   margin-bottom: 50px;
 }
 
-/* style portfolio */
+/* галирея */
 
 .gallery {
   padding-top: 94px;
@@ -281,7 +281,7 @@ ul {
   color: var(--team-color);
 }
 
-/*стили для главной*/
+/* наши особиности */
 
 .chip {
   padding-top: 94px;
@@ -322,6 +322,8 @@ ul {
   color: var(--team-color);
 }
 
+/*  работа */
+
 .job {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -340,6 +342,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+/* команда */
 
 .team {
   background-color: #f5f4fa;
@@ -377,7 +381,8 @@ ul {
   text-align: center;
 }
 
-/*стили для подвала*/
+/* подвал */
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
