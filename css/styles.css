@@ -167,7 +167,7 @@ ul {
   padding-bottom: 200px;
   background-color: #c4c4c4;
   text-align: center;
-  background-image: url(../img/hero/Img.jpg);
+  background-image: url(../img/hero/Img.jpg), linear-gradient(#c4c4c4, #c4c4c4);
 }
 
 .hero-title {
