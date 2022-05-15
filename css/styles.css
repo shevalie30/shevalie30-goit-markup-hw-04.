@@ -12,10 +12,8 @@
 .body {
   color: #212121;
   font-family: 'Roboto', sans-serif;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
+
 h1,
 h2,
 h3,
@@ -77,8 +75,6 @@ ul {
 .header-list-link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -163,11 +159,14 @@ ul {
 /* герой */
 
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #c4c4c4;
   text-align: center;
-  background-image: url(../img/hero/Img.jpg), linear-gradient(#2f303a66, #2f303a66);
+  background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Img.jpg);
 }
 
 .hero-title {
@@ -248,7 +247,8 @@ ul {
 
 .gallery-btn:hover,
 .gallery-btn:focus {
-  color: #2196f3;
+  background-color: #2196f3;
+  color: #f5f4fa;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -283,7 +283,13 @@ ul {
   margin-left: var(--gallery-list-gap);
 }
 
-.gallery-item:hover {
+.gallery-link {
+  text-decoration: var(--text-decoration);
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  display: block;
   cursor: var(--cursor);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -300,6 +306,7 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  color: #212121;
 }
 .gallery-team {
   margin-top: 4px;
@@ -321,12 +328,13 @@ ul {
 }
 
 .chip-iconc {
-  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 }
 
 .chip-item {
@@ -397,6 +405,10 @@ ul {
   justify-content: space-between;
 }
 
+.team-item {
+  background-color: #ffffff;
+}
+
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -436,7 +448,8 @@ ul {
   border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: #2196f3;
 }
 
@@ -460,7 +473,7 @@ ul {
 
 /* постоянные клиенты */
 
-.container-clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -566,10 +579,6 @@ ul {
 
 /* иконки подвала */
 
-.footer-iconc {
-  width: 206px;
-}
-
 .footer-title {
   margin-bottom: 20px;
 
@@ -593,12 +602,8 @@ ul {
 }
 
 .item-iconc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
@@ -613,4 +618,16 @@ ul {
 
 .svg-iconc {
   fill: #ffffff;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  width: 100%;
+  height: 100%;
 }
